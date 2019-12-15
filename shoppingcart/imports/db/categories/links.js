@@ -1,4 +1,4 @@
-import {Categories, Products} from  "../index"
+import {Categories, Products} from "../index"
 
 Categories.addLinks({
    categoryProducts: {

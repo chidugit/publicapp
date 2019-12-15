@@ -6,7 +6,7 @@ import {AccountCircle, Visibility, VisibilityOff} from "@material-ui/icons";
 import styles from "../styles/styles";
 import {USER} from "../store/enums";
 
-const LoginPage = props => {
+const LoginPage1 = props => {
     const {classes} = props;
     //states
     const [email, setEmail] = useState("");
@@ -74,4 +74,4 @@ const LoginPage = props => {
         </Paper>
     );
 };
-export default withStyles(styles)(LoginPage);
+export default withStyles(styles)(LoginPage1);

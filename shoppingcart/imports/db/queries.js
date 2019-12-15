@@ -1,3 +1,3 @@
-import getProductCategory from "./products/queries/getProductCategory"
+import getProductsCategory from "./products/queries/getProductsCategory"
 
-export {getProductCategory}
+export {getProductsCategory}

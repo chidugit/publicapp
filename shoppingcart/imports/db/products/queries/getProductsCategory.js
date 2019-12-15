@@ -1,11 +1,8 @@
 import Products from "../collection";
 
-export default Posts.createQuery("getProductCategory", {
+export default Products.createQuery("getProductsCategory", {
     $filter({filters, params}) {
-        filters.product = params.product;
-        if (filters.isVisible) {
-            filters.isVisible = params.visible;
-        }
+        filters.isVisible = params.visible;
     },
     product: 1,
     categoryId: 1,

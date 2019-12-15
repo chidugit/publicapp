@@ -1,7 +1,6 @@
 import React from "react";
 import {Grid, Typography} from "@material-ui/core";
 import classNames from "classnames"; //for conditionally including classNames, checkout link -https://www.npmjs.com/package/classnames
-
 //Footer content
 const footers = [{
     title: "Company",
@@ -31,19 +30,13 @@ const footers = [{
         description: ["Privacy policy", "Terms of use"]
     }
 ];
-
-const Footer = ({
-                    props
-                }) => {
-    const {
-        classes
-    } = props;
-
+const Footer = ({props}) => {
+    const {classes} = props;
     return (
         <> {
             /* Footer */}
             <footer className={classNames(classes.footer, classes.layout)}>
-                <Grid container spacing={32} justify="space-evenly">
+                <Grid container spacing={10} justify="space-evenly">
                     {footers.map(footer => (<Grid item xs key={footer.title}>
                             <Typography variant="h6"
                                         color="textPrimary"
